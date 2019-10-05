@@ -1,6 +1,4 @@
-from fpdf import FPDF
 from PIL import Image
-from fpdf import FPDF
 from os import listdir
 import sys
 path = "github/textToSymbols/images/"
@@ -29,4 +27,4 @@ for im in symbolsUsed:
   new_im.paste(im, (x_offset,0))
   x_offset += im.size[0]
 
-new_im.save("github/textToSymbols/output/file.jpg")
+new_im.save(path + "file.jpg")
